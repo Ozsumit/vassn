@@ -16,7 +16,7 @@ html{
 body{
    
     margin: 0;
-    background:url(light.svg);
+    background:url(Light.svg);
     display: flex;
     flex-direction: column;
     justify-content: center;
