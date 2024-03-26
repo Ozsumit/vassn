@@ -77,9 +77,11 @@ body{
         height: 100vh;
     }
     .whatilike{
-        width: 12rem;
+        width: 20rem;
+        font-size: 1.4rem;
     }.whatihate{
-        width: 12rem;
+        width: 20rem;
+    font-size: 1.4rem;
     }
 }
 #contact{
