@@ -4,4 +4,4 @@
     		<feDistantLight azimuth="3" elevation="82"></feDistantLight>
   	</feSpecularLighting>
   
-</filter></defs><rect width="700" height="700" fill="#060505e4"></rect><rect width="700" height="700" fill="hsl(316, 73%, 52%)" filter="url(#nnnoise-filter)"></rect></svg>
+</filter></defs><rect width="700" height="700" fill="#000000ff"></rect><rect width="700" height="700" fill="hsl(316, 73%, 52%)" filter="url(#nnnoise-filter)"></rect></svg>
