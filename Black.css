@@ -80,6 +80,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: transform 10s linear;
         img{
             height: 35rem;
             width: 35rem;
@@ -599,3 +600,9 @@ background-attachment: fixed;
   .slider.round:before {
     border-radius: 50%;
   }}
+  /* ------------------------------------------------------------------------------------------------- */
+.art:hover{
+    transform: rotate(360deg);
+       
+    }
+    

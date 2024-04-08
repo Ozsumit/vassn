@@ -77,10 +77,12 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: transform 10s linear;
         img{
             height: 35rem;
             width: 35rem;
-            pointer-events: none;
+            pointer-events: all;
+            
         }
     }
     .bs{
@@ -535,3 +537,9 @@ background-attachment: fixed;
 
 
 /* ------------------------------------------------------------------------------------------------- */
+.art:hover{
+transform: rotate(360deg);
+   
+}
+
+
