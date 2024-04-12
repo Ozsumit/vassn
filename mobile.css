@@ -1,3 +1,6 @@
+
+@media only screen and (max-width: 600px) {
+
 body{
     margin: 1vw;
 }
@@ -8,6 +11,35 @@ body{
     display: flex ;
     align-items: center;
 
+}
+#load {
+
+    letter-spacing: 2px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-family: "Madimi One", sans-serif;
+    }
+}
+.barOut {
+    width: 80vw;
+    height: 1.3rem;
+    border: 0px solid #f59470;
+}
+
+.Barin {
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(to right, #FFD966, hsl(316, 73%, 52%));
+    animation: loader 6s linear 1;
 }
 .homes{
     
@@ -138,4 +170,4 @@ body{
     align-items: center;
     flex-direction: row;
     padding-left: 4rem;
-}
+}}
