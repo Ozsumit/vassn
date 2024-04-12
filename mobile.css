@@ -102,7 +102,10 @@ body{
         display: flex;
         flex-direction: row;
         .items{
-           
+           img{
+            width:2rem ;
+            height: 2rem;
+           }
             i{
                 margin-top: 10px;
             }

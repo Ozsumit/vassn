@@ -46,6 +46,7 @@ body{
     color: var(--text);
     font-family: var(--bfont);
     font-size: 1.3rem;
+    width: 78px;
   }
   a::before{
     content: '';
@@ -102,6 +103,7 @@ body{
           
             background:linear-gradient(to right,#FFD966,hsl(316, 73%, 52%) );
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent ;
             text-shadow: 0px 0px 50px rgba(41, 41, 41, 0.21);
             padding: 1%;
@@ -500,8 +502,8 @@ background-attachment: fixed;
        justify-content: center;
        align-items: center;
        text-decoration: none;
-       color: #40393E;
-       background-color:#c4c1a47b;
+       color: #282527;
+       background-color:#63625d3d;
        border-radius: 1rem;
        border: 2px solid #8B7E74;
        height: 7rem;
