@@ -208,13 +208,19 @@
     var myvar;
     var yourvar;
     function timefunction(){
-yourvar= setTimeout(changetext, 3000)
-        myvar= setTimeout(myFunction, 6000);
+        yourvar= setTimeout(changetext, 2000)
+        myvar= setTimeout(myFunction, 8000);
+        ourvar=setTimeout(changetext2, 4600);
     }
-    
+     function changetext2(){
+        document.getElementById("tips").innerHTML = "Message the dev in instagram for feature request.";
+       
+        }
     function changetext(){
         document.getElementById("tips").innerHTML = "This site is still in Beta.";
+       
         }
+   
     function myFunction() {
         document.getElementById("load").style.display = "none";
   document.getElementById("main").style.display = "block";
