@@ -765,7 +765,7 @@
 @keyframes showup {
     from{
         margin-top: 80vh;
-        filter: blur(6px);
+        filter: blur(1px);
     }
     to{
         margin-top: 0;
