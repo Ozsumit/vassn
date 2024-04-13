@@ -68,6 +68,13 @@
             margin-top: 5vh;
             text-align: center;
         }
+        .tips {
+            color: #FFD966;
+            font-size: 1.1rem;
+            font-family: "Madimi One", sans-serif;
+            margin-top: 5vh;
+            text-align: center;
+        }
     }
     #main{
         animation: showup 1s ease-in-out 0s 1 ;
@@ -776,7 +783,7 @@
     justify-content: center;
     align-items: center;
     filter: blur(1x);
-    animation: jump 8.4s linear  ;
+    animation: jump 4.2s linear  ;
 
 
 }
@@ -934,6 +941,7 @@ svg #Ellips1 {
     }100%{
         transform: translateY(-20px);
         rotate: -2deg;
+      
     }
     
 }

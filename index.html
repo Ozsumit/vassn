@@ -240,18 +240,15 @@
     var myvar;
     var yourvar;
     function timefunction() {
-        yourvar = setTimeout(changetext, 2000)
-        myvar = setTimeout(myFunction, 8000);
-        ourvar = setTimeout(changetext2, 4600);
+       
+        myvar = setTimeout(myFunction, 4000);
+        ourvar = setTimeout(changetext2, 2000);
     }
     function changetext2() {
         document.getElementById("tips").innerHTML = "Message the dev in instagram for feature request.";
 
     }
-    function changetext() {
-        document.getElementById("tips").innerHTML = "This site is still in Beta.";
-
-    }
+   
 
     function myFunction() {
         document.getElementById("load").style.display = "none";
