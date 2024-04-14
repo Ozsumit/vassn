@@ -182,7 +182,9 @@
 
         }
     }
-
+.nav a{
+    width: auto;
+}
     #About {
         background-size: 30rem;
         background-attachment: fixed;

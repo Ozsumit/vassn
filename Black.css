@@ -28,6 +28,12 @@
 
 
     }
+    .logojd{
+        pointer-events: none;
+     
+        width: 6rem;
+        filter: grayscale(100%);
+        height: 6rem;    }
 
     #load {
 
@@ -58,7 +64,7 @@
             margin: 0;
             height: 100%;
             background: linear-gradient(to right, #FFD966, hsl(316, 73%, 52%));
-            animation: loader 6s linear 1;
+            animation: loader 4s linear 1;
         }
 
         #tips {
@@ -765,7 +771,7 @@
 @keyframes showup {
     from{
         margin-top: 80vh;
-        filter: blur(1px);
+        filter: blur(6px);
     }
     to{
         margin-top: 0;

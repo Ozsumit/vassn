@@ -27,6 +27,12 @@
 
 
     }
+    .logojd{
+        pointer-events: none;
+       
+        width: 6rem;
+        filter: invert(100%) sepia(7%);
+        height: 6rem;    }
 
     #load {
 
@@ -41,25 +47,35 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            color: #000000;
+            color: #fff;
             font-family: "Madimi One", sans-serif;
         }
 
         .barOut {
             width: 30vw;
             height: 1.3rem;
-            border: 1px solid #000000;
+            border: 2px solid #000000;
+            border-radius: 1rem;
         }
 
         .Barin {
+            border-radius: 1rem;
             margin: 0;
             height: 100%;
+            
             background: linear-gradient(to right, #FFD966, hsl(316, 73%, 52%));
-            animation: loader 6s linear 1;
+            animation: loader 4s linear 1;
         }
 
         #tips {
             color: #000000;
+            font-size: 1.1rem;
+            font-family: "Madimi One", sans-serif;
+            margin-top: 5vh;
+            text-align: center;
+        }
+        .tips {
+            color: #FFD966;
             font-size: 1.1rem;
             font-family: "Madimi One", sans-serif;
             margin-top: 5vh;
