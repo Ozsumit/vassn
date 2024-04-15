@@ -1,4 +1,4 @@
-@media(prefers-color-scheme: dark) and (min-width:1201px) {
+@media(prefers-color-scheme: dark) {
     :root {
         --text: #ffffff;
         --background: #decbfb;
@@ -233,6 +233,9 @@
             display: flex;
             flex-direction: row;
             gap: 20px;
+            a{
+                color: #f59470;
+            }
 
             /* justify-content: center;
     align-items: center;
