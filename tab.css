@@ -35,9 +35,11 @@
         h1 {
             margin-left: 20vw;
             width: 50vw;
+            margin-bottom:5rem ;
+
            span{
-            background-color: #0e0d0d16;
-            backdrop-filter: blur(20px);
+            
+           
             padding: 3%;
             border-radius: 1rem;
            }
@@ -58,13 +60,14 @@
     flex-direction: column;
     display: flex;
     margin: 0;
+    
   
     
 
     .maincontent {
         display: flex;
         margin-left: 0;
-        margin-top: 10vh;
+        
 
         .cards {
             justify-content: center;
