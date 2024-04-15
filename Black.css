@@ -1,4 +1,4 @@
-@media(prefers-color-scheme: dark) {
+@media(prefers-color-scheme: dark) and (min-width:1201px) {
     :root {
         --text: #ffffff;
         --background: #decbfb;
