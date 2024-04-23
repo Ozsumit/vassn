@@ -82,7 +82,7 @@
    document.getElementById("bckdor").value="";
 const inputBox = document.getElementById("bckdor");
 const revealButton = document.getElementById("HIDDEV");
-const secretWord = "Vasu"; // Replace with your desired secret word
+const getElementById = "Vasu";
 function show(){
     var x = document.getElementById("Dev");
   if (x.style.display === "none") {
@@ -94,7 +94,7 @@ function show(){
 document.getElementById("Dev").style.display = "none";
    document.getElementById("bckdor").value="";
 inputBox.addEventListener("keyup", function() {
-  if (inputBox.value === secretWord) {
+  if (inputBox.value === getElementById) {
     revealButton.disabled = false; 
     revealButton.style.pointerEvents="all";
     document.getElementById("saymyname").style.display="none";
