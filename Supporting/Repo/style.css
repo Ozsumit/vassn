@@ -5,6 +5,16 @@ body{
     color: #fff;
     background-repeat: no-repeat;background-size:cover;
     display: flex;
+    background-attachment: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+#main{
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
@@ -77,7 +87,8 @@ h3{
     width: 50vw;
     text-align: center;
 }
-.reposec{
+.reposec, 
+.reposecDev{
     display: grid;
     flex-direction: row;
     gap: 1rem;
@@ -89,15 +100,30 @@ h3{
     backdrop-filter: blur(5px);
     height: auto;
     padding: 2%;
+    .items:hover{
+        background-color: #000000da;
+        backdrop-filter: blur(9px);
+        border-radius: .5rem;
+        padding: 1rem;
+        display: flex;
+        border: 2px solid #ffbf00;
+        align-items: center;
+        justify-content: center;
+        height: 1rem;
+        box-shadow: 1px 1px 12px #ffbf005e;
+    }
     .items{
         background-color: #00000089;
         backdrop-filter: blur(5px);
         border-radius: .5rem;
         padding: 1rem;
+        border: 2px solid #00000000;
         display: flex;
         align-items: center;
         justify-content: center;
         height: 1rem;
+        transition: all .2s linear;
+    
         a{
 
             height: 2rem;
@@ -128,6 +154,21 @@ h4{
         color: #d6d6d6;
         animation: jump .5s linear infinite;
     }
+}
+.txt{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bfont);
+    text-decoration: none;
+    color: var(--text);
+    font-family:"Gemunu Libre", sans-serif;
+    width: auto;
+    font-size: 1.5rem;
+    color: #d6d6d6;
+    text-align: center;
+   
 }
 #contact {
 height: 90vh;
@@ -235,6 +276,65 @@ margin-top: 0rem;
     }
 }
 
+#bckdor{
+    width: 15rem;
+    height: 1.5rem;
+    border-radius: .7rem;
+    padding: .5rem;
+    border: 3px solid #ffbf00;
+    box-shadow: 0px 0px 15px #ffbf0070;
+    background: #000000d7;
+    backdrop-filter: blur(15px);
+    color: #ffbf00;
+    margin-bottom: 1rem;
+
+}::placeholder{
+    color: #ffbf00;
+    opacity: 1;
+
+}
+
+
+#bckdor:focus{
+    outline: none;
+   
+     
+  }
+ input:focus::placeholder{
+      transform: translateY(2px);
+     
+       
+    }
+  #brba img{
+   
+       width:10rem ;
+       border-radius: 1rem;
+       
+         
+      
+   
+     
+  }
+#HIDDEV{
+    width: 4rem;
+    height: 2rem;
+    background: #ffbf00;
+    backdrop-filter: blur(5px);
+    color: #000000;
+    border: 2px solid rgba(255, 255, 255, 0);
+    font-family: "Gemunu Libre", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    pointer-events:none;
+    border-radius: .4rem;
+    margin-bottom: 2rem;
+transition: all .2s linear;
+}
+#HIDDEV:hover{
+    background:#ffc30f ;
+    box-shadow: 0px 0px 20px #ffbf00;
+    border: 2px solid #fff;
+}
 @media only screen and (max-width: 850px) {
     body{
         background: url(blur.svg);
@@ -246,6 +346,10 @@ margin-top: 0rem;
     }
     .reposec{
         padding: 3%;
+    }#bckdor{
+        
+        margin-bottom: 1rem;
+    
     }
     .logosec{
         display: flex;
@@ -258,6 +362,19 @@ margin-top: 0rem;
             min-width: 100px;
             max-height: 40vh;
             max-width: 40vw;
+        }
+    }
+    .nav {
+        a:hover::before {
+            margin-top: 3%;
+            transform: scaleX(1);
+            transform-origin: bottom left;
+            content: '';
+            color: #e4469d00;
+            border: 1px solid #e4469d00;
+            position: absolute;
+            width: 0rem;
+            align-items: center;
         }
     }
 }
