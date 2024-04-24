@@ -18,6 +18,13 @@ body{
     flex-direction: column;
     align-items: center;
 }
+#GuessingGame{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
 .nav {
     margin-bottom: 0rem;
@@ -79,6 +86,7 @@ body{
         min-width: 100px;
         max-height: 10rem;
         max-width: 8rem;
+        pointer-events: none;
     }
 }
 h3{
@@ -110,7 +118,8 @@ h3{
         align-items: center;
         justify-content: center;
         height: 1rem;
-        box-shadow: 1px 1px 12px #ffbf005e;
+        /* box-shadow: 1px 1px 12px #ffbf005e; */
+        box-shadow:  0 0 12px #ffbf0081;
     }
     .items{
         background-color: #00000089;
@@ -182,6 +191,20 @@ margin-top: 0rem;
     justify-content: center;
     align-items: center;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .emp {
+        color: #ffffff;
+        font-family: "Gemunu Libre", sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 1rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 
     .contact {
         border-top-left-radius: 3rem;
@@ -190,10 +213,12 @@ margin-top: 0rem;
         width: 95vw;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #0000003f;
-        backdrop-filter: blur(15px);
+     
+        background-color: #0e0d0d9e;
+        backdrop-filter: blur(15px); 
+        border-radius: 1rem;
+        /* border: 2px solid #ffbf00; */
+        /* box-shadow:  0 0 12px #ffbf0081; */
 
         .logo {
             display: flex;
@@ -214,17 +239,14 @@ margin-top: 0rem;
 
     }
 
-    .emp {
-        color: #ffffff;
-        font-family: "Gemunu Libre", sans-serif;
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
+   
 
     .contactitems {
         display: flex;
         flex-direction: row;
         gap: 3rem;
+        justify-content: center;
+        align-items: center;
 
 
         .items {
@@ -307,13 +329,20 @@ margin-top: 0rem;
     }
   #brba img{
    
-       width:10rem ;
-       border-radius: 1rem;
-       
-         
+    border-radius: 1rem;
+    padding: 0rem;
+    width:12rem ;
+    height: 11rem;
+ margin-bottom: 2rem;
+       border: 3px solid #38b137; 
+     box-shadow:  0 0 13px #00ff00a3;
       
    
      
+  }
+
+  #Dev{
+    margin-bottom: 5rem;
   }
 #HIDDEV{
     width: 4rem;
