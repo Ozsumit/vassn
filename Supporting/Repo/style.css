@@ -1,4 +1,8 @@
-body{
+
+html{
+ scroll-width:none;   
+}
+    body{
     background-attachment: fixed;
     background: url(blir.svg);
     background-color: #000;
