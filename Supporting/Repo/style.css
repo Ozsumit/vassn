@@ -1,6 +1,6 @@
 
 html{
- scroll-width:none;   
+ scrollbar-width:none;   
 }
     body{
     background-attachment: fixed;
