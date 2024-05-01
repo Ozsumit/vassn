@@ -443,3 +443,8 @@ transition: all .2s linear;
     }
     
 }
+.iframepdf{
+    border-radius: 1rem;
+    border: 2px solid #ffbf00;
+    display: none;
+}

@@ -58,12 +58,23 @@
             </div>
             <div class="lastcontact">
                 <h4><a href="##">Email: Pohrelsumit36@gmail.com</a></h4>
-                <h4><a href="https://Sumit.info.np">Vass.inc©</a></h4>
+                <h4><a href="." onclick="displaypdf()">Vass.inc©</a></h4>
                 <!-- <img src="372405eac3c4fe59c89069feace3eaa8(1) copy.svg" alt=""> -->
             </div>
 
         </div>
+    </section>
 
-</section>
+    <iframe class="iframepdf" id="iframepdf" src="https://drive.google.com/file/d/1AI1x2zIYWYtbV9w0usiehzzIyVh-5WBj/preview" width="600" height="600" allow="autoplay"></iframe>
 </body>
 </html>
+<script>
+    const pdf1= document.getElementById("iframepdf");
+    function displaypdf(){
+        if(document.getElementById("iframepdf").style.display==="none" ){
+            document.getElementById("iframepdf").style.display="block";}
+    
+    else{
+        document.getElementById("iframepdf").style.display="none";
+    }}
+</script>

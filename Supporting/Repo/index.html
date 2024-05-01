@@ -40,6 +40,7 @@
          <div class="items" id="###&quot;"><a href="files/GroupB-OS.pdf" download="Cover-OS">Group'B' OS    </a></div>
          <div class="items" id="###&quot;"><a href="Group A.pdf" download="Group'A' OS">Group'A' OS    </a></div>
          <div class="items" id="###&quot;"><a href="files/groupF.pdf" download="Group F-OS">Group'F' OS    </a></div>
+         <!-- <div class="items" id="###&quot;"><a href="contact.html" target="_blank" onclick="displaypdf()">Test Object    </a></div> -->
          
         </div>
         <h4><a href="https://Sumit.info.np">Contact me to request updates</a></h4>
@@ -51,7 +52,7 @@
 <h4 class="txt">Enter the code word to reveal the hidden items.</h4>
     <div id="brba"><img id="saymyname" src="waltwhite-breakingbad.gif" alt="">
         <img id="urgdmrght" src="breaking-bad-walter-white.gif" style="display: none;" alt=""></div>
-    <input type="text" name="backdoor" id="bckdor" value=" " placeholder="Say my name.">
+    <input type="text" name="backdoor" id="bckdor" value=" " placeholder="Say my name." onclick="saymyname()">
     <a href="#Dev">
         <button id="HIDDEV" disabled="" onclick="show()">Reveal</button></a>
       </div>
@@ -74,11 +75,16 @@
 
 
 
+<audio id="play">
+  <source src="Voicy_Say my name.mp3" type="audio/mp3">
+</audio>
 
 
 
 
-
+<audio id="play2">
+  <source src="Voicy_You are god damn right.mp3" type="audio/mp3">
+</audio>
 
 
 
@@ -107,6 +113,7 @@ inputBox.addEventListener("keyup", function() {
     revealButton.style.pointerEvents="all";
     document.getElementById("saymyname").style.display="none";
     document.getElementById("urgdmrght").style.display="block";
+    document.getElementById("play2").play();
   
   } else {
     revealButton.disabled = true;
@@ -116,6 +123,9 @@ inputBox.addEventListener("keyup", function() {
     
   }
 });
+function saymyname(){
+  document.getElementById("play").play();
+}
 </script>
 
 </body>
