@@ -22,7 +22,9 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sanchez:ital@0;1&display=swap"
         rel="stylesheet">
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Damion&family=Satisfy&family=Sofia&display=swap" rel="stylesheet">
     <link rel="stylesheet" media="screen and (max-width: 1000px) and (min-width:751px)" href="tab.css">
     <link rel="icon" type="image/x-icon" href="favi.svg">
 
@@ -33,10 +35,12 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1069983810172301"
      crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/b80a054d9d.js" crossorigin="anonymous"></script>
+<script src="typing.js"></script>
 <style>
     #main {
         display: none;
     }
+    
 </style>
 
 <body onload="timefunction()">
@@ -103,7 +107,8 @@
                 <div class="bs">
 
                     <h1>
-                        <span>Hello!</span><br>
+                        
+                        <span class="typing"></span><span class="typing"></span><br>
                         I'm Sumit, a frontend web developer
                     </h1>
 
@@ -239,12 +244,24 @@
     </div>
 </body>
 <script>
+
+
+var typed = new Typed(".typing", {
+        strings: [ "Hello!","Hello!","Hello!","नमस्कार!", "Hola!", "Ciao!",  "Bonjour!", "Blyaattt!!", "Konnichiwa!",  ],
+        typeSpeed: 250,
+        backSpeed: 50,
+        loop: true,
+      
+    });
+
+
     var myvar;
     var yourvar;
     function timefunction() {
        
         myvar = setTimeout(myFunction, 4000);
         ourvar = setTimeout(changetext2, 2000);
+        
     }
     function changetext2() {
         document.getElementById("tips").innerHTML = "Message the dev in instagram for feature request.";
