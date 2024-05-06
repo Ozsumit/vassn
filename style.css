@@ -1,11 +1,12 @@
 @media (prefers-color-scheme: light) {
     :root {
-        --text: #000000;
+        --text: #ffffff;
         --background: #decbfb;
-        --primary: #bcadfa56;
+        --primary: #ffffff28;
         --secondary: #cebdff;
         --accent: #bdadfa;
-        --hfont:  "Satisfy", cursive;
+        --hfont: "Pacifico", cursive;
+        --h2font: "Protest Riot", sans-serif;
 
         --bfont: "Sanchez", serif;
 
@@ -35,14 +36,15 @@
         height: 6rem;    }
 
     #load {
-background: #010101;
+background: #bcadfa;
         letter-spacing: 2px;
         height: 100vh;
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-
+width: 100vw;
+height: 100vh;
         h2 {
             display: flex;
             justify-content: center;
@@ -164,7 +166,7 @@ background: #010101;
 
                 span {
 
-
+                    font-family: var(--h2font);
                     background: linear-gradient(to right, #FFD966, hsl(316, 73%, 52%));
                     -webkit-background-clip: text;
                     background-clip: text;
