@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 
-
+<!-- THIS CODE IS NOT WRITTEN BY ME!!
+ALL CREDITS GO TO THE CREATOR -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>404</title>
 </head>
 
 <style>
@@ -70,20 +71,35 @@ p {
   font-stretch: expanded;
   letter-spacing: 1rem;
   font-weight: bold;
+}.exxsmall{
+  margin-top: 4rem;
+  font-size: 1rem;
+  font-stretch: expanded;
+  letter-spacing: .5rem;
+  font-weight: bold;
+  opacity:.3;
 }
 .handle {
   background: #ffe500;
-  width: 2rem;
-  height: 3.9rem;
+  width: 1.8rem;
+  height: 4.2rem;
   top: 0;
   left: 0;
+  font-weight: bold;
   margin-top: 1px;
   position: absolute;
-  writing-mode:sideways-lr;
+  display: flex;
+  line-height: .7;
+  justify-content: center;
+  align-items: center;
+  p{
+    word-wrap: break-word;
   color: #0a0a0ad2;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-family:'Roboto Mono', monospace;
   cursor: pointer;
+  width: 1rem; letter-spacing: 0;
+  }
 }
 
 #cb-replay {
@@ -100,6 +116,16 @@ p {
     fill: #888;
   }
 }
+@media only screen and (max-width: 850px) {
+  p {
+  color: #fff;
+  font-size: 13rem;
+  letter-spacing: .2px;
+  margin: 0;
+  text-transform: capitalize;
+  width: auto;
+}
+}
 </style>
 <body>
     <div class="container">
@@ -110,7 +136,10 @@ p {
              
             <p class="small">page not found</p>
             <p class="exsmall">Developed by Vass</p>
-          <span class="handle" onclick="home()">Home</span>
+          <span class="handle" onclick="home()"><p>Home</p></span>
+          <p class="exxsmall">You looking for pages like im looking for bitches. Unfortunately we didn't found any</p>
+
+
       
         </div>
       </div>
