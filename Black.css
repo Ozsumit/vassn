@@ -602,7 +602,7 @@ background-color: #010101;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                font-family: var(--hfont);
+                font-family: var(--h2font);
                 width: 90vw;
                 gap: 10px;
 
