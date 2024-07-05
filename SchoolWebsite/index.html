@@ -5,22 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Name - Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesMob.css">
 </head>
-<body><div class="main">
-    <header>
-        <a href="index.html#Home" class="logoxdc" style="display: flex;
+<script src="script.js"></script>
+<script src="counter.js"></script>
+<header>
+    <a href="index.html#Home" class="logoxdc" style="display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         color: #fff;
         font-size: 1.3rem;
-        margin-top: 1rem;
+        
         text-decoration: none;
         gap: 1rem;
         width: 17rem;" >
-            <img src="school-logo-design_706452-12.avif" alt="" onclick="homelink()" style= " border-radius: 50%; height: 4rem; width:4rem;" >
+            <img src="images/Screenshot 2024-07-05 215347.png" alt="" onclick="homelink()" style= " border-radius: 50%; height: 4rem; width:4rem;" >
             <div class="sclname">Jyoti English Boarding School</div>
           </a>
+          <div class="dropdown" id="dropdown" onclick="showdropdown()">=</div>
+          <div class="nav2" id="nav2">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Facilities</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+            <div class="close" onclick="closebtn()" style="font-size: 2rem;color: #fff;
+            " >X</div>
+          </div>
         <nav>
             <ul>
                 <li><a href="#" class="active">Home</a></li>
@@ -31,7 +45,8 @@
             </ul>
         </nav>
     </header>
-    <div>
+    <body><div class="main">
+
         <section class="hero">
             <div class="motto">
                 <h1>For the bright future of the students.
@@ -39,10 +54,10 @@
                 </h1>
                 <h4>Top Tier Education for Top Notch Students</h4>
                 
-                <button>Admission</button>
+                <button>Join Today</button>
             </div>
             <div class="student-image">
-                <img src="j 1.png" alt="Smiling student with notebook">
+                <img class="heroimg" src="images/j1.png" alt="Copyrighted image from IEMIS,CEHRD.This Image doesn't belong to Jyoti English Secondary School in Any way. It is being used under fair use policy.">
             </div>
         </section>
         <section id="Facilities">
@@ -51,37 +66,58 @@
 
 
         <div class="facard">
-          <a href="#">  <img class="facimg" src="pexels-element5-1370298.jpg" alt="img">
+          <a href="#">  <img class="facimg" src="images/pexels-element5-1370298.jpg" alt="img">
             <div class="text">
                 <h3>Library</h3></a>
                 <h4>The spacious school library is stocked with periodicals, newspapers and…</h4>
             </div>
-        </div>  
+        </div>
         <div class="facard">
-           <a href="#"> <img class="facimg" src="pexels-ron-lach-10638115.jpg" alt="img">
+           <a href="#"> <img class="facimg" src="images/pexels-ron-lach-10638115.jpg" alt="img">
             <div class="text" style="background-color: #f7509b;">
                 <h3>Computer</h3></a>
                 <h4>The spacious school library is stocked with periodicals, newspapers and…</h4>
-            </div>
-        </div> <div class="facard" >
-           <a href="#"> <img class="facimg" src="pexels-tima-miroshnichenko-5427861.jpg" alt="img">
+            </div></div>
+         <div class="facard" >
+           <a href="#"> <img class="facimg" src="images/pexels-tima-miroshnichenko-5427861.jpg" alt="img">
             <div class="text" style="background-color: #46dae2;">
                 <h3>Science  lab</h3></a>
-                <h4>
+                <h4 style="text-align: start;">
 
-                    To provide hands-on practical experience to our students, excellent equipment…
+                    To provide practical experience to our students, excellent equipment...
                     </h4>
-            </div>
-        </div>
+            </div></div>
+       
         <div class="facard">
-           <a href="#"> <img class="facimg" src="pexels-nasirun-khan-102497153-17113220.jpg
+           <a href="#"> <img class="facimg" src="images/pexels-nasirun-khan-102497153-17113220.jpg
             " alt="img">
             <div class="text" style="background-color: #509bf7;">
                 <h3>Outdoor activities</h3></a>
-                <h4>The spacious school library is stocked with periodicals, newspapers and…</h4>
+                <h4>The spacious school library is stocked with periodicals, newspapers and…</h4></div>
             </div>
-        </div></div>
+        
         </section>
+        <div class="counter-section">
+            <div class="counter-item">
+                <div class="counterdiv"><div id="teacherCount" class="count">0  </div><span>+</span></div>
+                <div class="label">Teachers</div>
+            </div>
+            <div class="counter-item">
+                <div class="counterdiv"><div id="studentCount" class="count">0  </div><span>+</span></div>
+                <div class="label">Students</div>
+            </div>
+            <div class="counter-item">
+              <div class="counterdiv">  <div id="staffCount" class="count">0  </div><span>+</span></div>
+                <div class="label">Staff</div>
+            </div>
+            <div class="counter-item">
+                <div class="counterdiv">  <div id="experiencecount" class="count">0  </div><span>+</span></div>
+                  <div class="label">Experience</div>
+              </div>
+        </div>
     </div>
+    </div>
+
+    
 </body>
 </html>
