@@ -1,4 +1,4 @@
-@media(prefers-color-scheme: dark) {
+
     :root {
         --text: #ffffff;
         --background: #decbfb;
@@ -740,7 +740,7 @@ background-color: #010101;
     .slider.round:before {
         border-radius: 50%;
     }
-}
+
 
 @keyframes loader {
     10% {
