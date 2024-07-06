@@ -23,63 +23,74 @@
             <img src="images/Screenshot 2024-07-05 215347.png" alt="" onclick="homelink()" style= " border-radius: 50%; height: 4rem; width:4rem;" >
             <div class="sclname">Jyoti English Boarding School</div>
           </a>
-          <div class="dropdown" id="dropdown" onclick="showdropdown()">=</div>
+          <div class="dropdown" id="dropdown" onclick="showdropdown()">≡</div>
           <div class="nav2" id="nav2">
-            <ul>
+            <ul id="navul">
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">Facilities</a></li>
                 <li><a href="#">Contacts</a></li>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">About us</a></li>
             </ul>
-            <div class="close" onclick="closebtn()" style="font-size: 2rem;color: #fff;
-            " >X</div>
+           
           </div>
-        <nav>
+        <nav id="nav">
             <ul>
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#hero" class="active">Home</a></li>
                 <li><a href="#">Facilities</a></li>
                 <li><a href="#">Contacts</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="#">About us</a></li>
             </ul>
         </nav>
     </header>
-    <body><div class="main">
+    <body>
+        
+        <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0" nonce="xZZuX6f6"></script>
 
+
+<div class="main">
+ <div class="heroback">
         <section class="hero">
+           
             <div class="motto">
                 <h1>For the bright future of the students.
                     
                 </h1>
-                <h4>Top Tier Education for Top Notch Students</h4>
+                <h4>Learning for Advancements</h4>
                 
                 <button>Join Today</button>
             </div>
             <div class="student-image">
                 <img class="heroimg" src="images/j1.png" alt="Copyrighted image from IEMIS,CEHRD.This Image doesn't belong to Jyoti English Secondary School in Any way. It is being used under fair use policy.">
             </div>
-        </section>
+        </section></div>
         <section id="Facilities">
         <h1>Our Facilities</h1>  
         <div class="cardfacs">
 
 
         <div class="facard">
-          <a href="#">  <img class="facimg" src="images/pexels-element5-1370298.jpg" alt="img">
+          <a href="#"><div class="img-container">
+            <img src="images/pexels-element5-1370298.jpg" alt="Description">
+          </div>  
             <div class="text">
                 <h3>Library</h3></a>
                 <h4>The spacious school library is stocked with periodicals, newspapers and…</h4>
             </div>
         </div>
         <div class="facard">
-           <a href="#"> <img class="facimg" src="images/pexels-ron-lach-10638115.jpg" alt="img">
+           <a href="#"><div class="img-container">
+            <img class="facimg" src="images/pexels-ron-lach-10638115.jpg" alt="img">
+          </div>  
             <div class="text" style="background-color: #f7509b;">
                 <h3>Computer</h3></a>
                 <h4>The spacious school library is stocked with periodicals, newspapers and…</h4>
             </div></div>
          <div class="facard" >
-           <a href="#"> <img class="facimg" src="images/pexels-tima-miroshnichenko-5427861.jpg" alt="img">
+           <a href="#"><div class="img-container">
+            <img class="facimg" src="images/pexels-tima-miroshnichenko-5427861.jpg" alt="img">          </div>   
             <div class="text" style="background-color: #46dae2;">
                 <h3>Science  lab</h3></a>
                 <h4 style="text-align: start;">
@@ -89,8 +100,9 @@
             </div></div>
        
         <div class="facard">
-           <a href="#"> <img class="facimg" src="images/pexels-nasirun-khan-102497153-17113220.jpg
-            " alt="img">
+           <a href="#"><div class="img-container">
+            <img class="facimg" src="images/pexels-nasirun-khan-102497153-17113220.jpg
+            " alt="img">      </div>  
             <div class="text" style="background-color: #509bf7;">
                 <h3>Outdoor activities</h3></a>
                 <h4>The spacious school library is stocked with periodicals, newspapers and…</h4></div>
@@ -112,12 +124,46 @@
             </div>
             <div class="counter-item">
                 <div class="counterdiv">  <div id="experiencecount" class="count">0  </div><span>+</span></div>
-                  <div class="label">Experience</div>
+                  <div class="label"> Years Of Experience</div>
               </div>
         </div>
     </div>
     </div>
 
-    
+   <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section about">
+      <h3>About School</h3>
+      <p>Established in 2071, Nidi Secondary School promotes entrepreneurial spirit through progressive education. Our vision is to transform the society through entrepreneurship.</p>
+    </div>
+    <div class="footer-section inquiries" >
+      <h3>General Inquiries</h3>
+      <p style="cursor: pointer;">Mail: jyotiboardingschool@gmail.com</p>
+      <a href="tel:" > Call: 023555043</a>
+      <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.7383745671004!2d88.04615809275114!3d26.720669015366244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e5b71c6639eb2f%3A0x23d7c538c25ad760!2sJyoti%20Secondary%20English%20Boarding%20School-%20Buddhashanti%20%2CJhapa!5e0!3m2!1sen!2snp!4v1720280600918!5m2!1sen!2snp" width="400" height="300" style="border:0; margin-top: 3rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footer-section address">
+      <h3>Address</h3>
+      <p>Nidi Secondary School</p>
+      <p>Indreni Campus</p>
+      <p>Birtamode-2 Ram Chowk Jhapa</p>
+    </div>
+    <div class="footer-section menu">
+      <h3>Menu</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Notice</a></li>
+        <li><a href="#">Program</a></li>
+        <li><a href="#">Admission</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Developer</a></li>
+      </ul>
+    </div>
+    <div class="fb-page" data-href="https://www.facebook.com/jyotiboardingschool/photos_by" data-tabs="timeline" data-width="350" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/jyotiboardingschool/photos_by" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/jyotiboardingschool/photos_by">Jyoti Boarding School- Budhabare,Jhapa</a></blockquote></div>
+
+  </div>
+</footer>
 </body>
 </html>

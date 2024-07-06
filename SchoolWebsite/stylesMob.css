@@ -1,5 +1,13 @@
 @media only screen and (max-width: 768px) {
+   body{
    
+  background-image: url("images/j1.png");
+  background-position:-1rem 5rem;
+
+  background-size: contain;
+  padding-bottom: 0rem;height: 60vh;
+  background-repeat: no-repeat;
+  background-color: #1a4ba3;   }
     .main{
      justify-content: center;
      display: flex;
@@ -10,20 +18,32 @@
        }  
      .dropdown{
          display: flex;
-       }
+         margin-right: 1.5rem;
+         font-size: 2rem;
+         transition: all .5s ease-in-out;
+         -webkit-transition: all .5s ease-in-out;
+         -moz-transition: all .5s ease-in-out;
+         -ms-transition: all .5s ease-in-out;
+         cursor: pointer;
+         -o-transition: all .5s ease-in-out;
+         padding: 1%;
+}
  
        .nav2{
          margin-right: 1rem;
-         width: 7rem;
+         width: 50vw;
+         height: 100vh;
          padding: 1%;
-         margin-right: 5rem;
+       
          display: none;
-         translate: -1rem 4rem;
+      margin-top: 46.5rem;
+     
+      justify-self: left;
          flex-direction: column;
          justify-content: center;
          align-items: center;
-         background-color: #1a316c9d;
-         backdrop-filter: blur(7px);
+         background-color: #010059d9;
+         backdrop-filter: blur(15px);
          border-radius: .5rem;
          -webkit-border-radius: .5rem;
          -moz-border-radius: .5rem;
@@ -32,15 +52,23 @@
          text-decoration: none;
          color: #252424;
          position: absolute;
-         left: 65%;
+         z-index: 5;
+         
+       }
+       nav{
+        display: none;
        }
      ul{
-             list-style: none;
-             display: flex;
-             flex-direction: column;
-             gap: .5rem;}
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
+      justify-content: space-evenly;
+      font-size: 2rem;
+            }
         ul li a{
         list-style: none;
+ 
              text-decoration: none;
              list-style: none;
              color:#ffffff;
@@ -64,9 +92,10 @@
          -ms-border-radius: 1rem;
          -o-border-radius: 1rem;
          flex-direction: column;
-         margin-top: 7rem;
+         margin-top: 2rem;
          display: flex;
          /* justify-content: space-between; */
+         z-index: -1;
          width: 100%;
      padding-bottom: 2rem;
          background-color: #d6d6d647;
@@ -80,14 +109,14 @@
        
          
           .cardfacs {
-            display: grid;
             flex-direction: column;
+            display: grid;
             grid-template-columns: repeat(auto-fit, minmax(15rem, 0fr));
             grid-template-rows: minmax(1rem, 31rem);
             justify-content: center;
             gap: 3%;
             align-items: center;
-            width: 95%;
+            width: 100%;
           a{
             text-decoration: none;color: #fff;
           }
@@ -118,7 +147,7 @@
             -ms-border-radius: .3rem;
             -o-border-radius: .3rem;
         }
-         }
+         }}
    
      nav ul {
  display: none;   
@@ -128,17 +157,61 @@
      align-items: center
    }
      .hero {
+         display: flex;
          flex-direction: column;
          text-align: center;
+         justify-content: center;
+         align-items: center;
          height: auto;
-     }
+         height: 100%;
+         background-color: hsla(0, 0%, 100%, 0.171);
+         backdrop-filter: blur(5px);
+         border-radius: 1rem;
+         -webkit-border-radius: 1rem;
+         -moz-border-radius: 1rem;
+         -ms-border-radius: 1rem;
+         -o-border-radius: 1rem;
+}
    
      .motto {
          margin-bottom: 2rem;
-         margin-left: 0;
+         margin-left: 0rem;
+         h4{
+          margin-top: 1rem;
+          color: #ffffff; text-align: center;
+          font-size: 1.3rem;
+         }
      }
    
      .student-image {
-         text-align: center;
+        
+         display: none;
+
      }
- }}
+
+.heroback{
+  
+ z-index: -1;
+  
+}
+.counter-section {
+  margin-top: 0vh;
+  width: 85%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 0fr));
+  grid-template-rows: minmax(1rem, 7rem);
+  flex-direction: column;}
+
+  .counter-item {
+    text-align: center;
+    height: min-content;
+    .count {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #ffffff;
+       
+    }
+}
+
+
+}

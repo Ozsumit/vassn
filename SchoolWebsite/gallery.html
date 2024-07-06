@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Image Viewer</title>
+ 
+    <link rel="stylesheet" href="gallery.css">
+
+</head>
+<body>
+        
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0" nonce="xZZuX6f6"></script>
+    
+    
+    
+    <div class="main">
+    <header>
+        <a href="index.html#Home" class="logoxdc" style="display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 1.3rem;
+            
+            text-decoration: none;
+            gap: 1rem;
+            width: 17rem;" >
+                <img src="images/Screenshot 2024-07-05 215347.png" alt="" onclick="homelink()" style= " border-radius: 50%; height: 4rem; width:4rem;" >
+                <div class="sclname">Jyoti English Boarding School</div>
+              </a>
+              <div class="dropdown" id="dropdown" onclick="showdropdown()">=</div>
+              <div class="nav2" id="nav2">
+                <ul id="navul">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="#">Facilities</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#gallery"class="active">Gallery</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+                <div class="close" onclick="closebtn()" style="font-size: 2rem;color: #fff;
+                " >X</div>
+              </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#">Facilities</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </nav>
+        </header>  
+       
+       
+
+<h1>Image Gallery</h1>
+
+<div class="gallery" id="gallery" onclick="openLightbox(event)">
+    <img loading="lazy" src="gallery/1.jpg" alt="Image 1">
+    <img loading="lazy" src="gallery/2.jpg" alt="Image 2">
+    <img loading="lazy" src="gallery/3.jpg" alt="Image 1">
+    <img loading="lazy" src="gallery/4.jpg" alt="Image 2">
+    <img loading="lazy" src="gallery/5.jpg" alt="Image 1">
+    <img loading="lazy" src="gallery/6.jpg" alt="Image 2">
+    <img loading="lazy" src="gallery/7.jpg" alt="Image 2">
+    <img loading="lazy" src="gallery/8.jpg" alt="Image 2">
+    <img loading="lazy" src="gallery/9.jpg" alt="Image 2">
+    <img loading="lazy" src="gallery/10.jpg" alt="Image 2">
+    <img loading="lazy" src="gallery/11.jpg" alt="Image 2">
+    <img loading="lazy" src="gallery/12.jpg" alt="Image 2">
+    <img loading="lazy" src="gallery/13.jpg" alt="Image 2">
+    <img loading="lazy" src="gallery/14.jpg" alt="Image 2">
+    <img loading="lazy" src="gallery/15.jpg" alt="Image 2">
+    <img loading="lazy" src="gallery/16.jpg" alt="Image 2">
+    <img loading="lazy" src="gallery/17.jpg" alt="Image 2">
+    <img loading="lazy" src="gallery/18.jpg" alt="Image 2">
+    <img loading="lazy" src="gallery/19.jpg" alt="Image 2">
+    <img loading="lazy" src="gallery/20.jpg" alt="Image 2">
+    <img loading="lazy" src="gallery/21.jpg" alt="Image 2">
+    <img loading="lazy" src="gallery/22.jpg" alt="Image 2">
+
+
+</div>
+
+<!-- Lightbox container -->
+<div id="lightbox">
+    <!-- Close button -->
+    <span id="close-btn" onclick="closeLightbox()">&times;</span>
+
+    <!-- Main lightbox image -->
+    <img loading="lazy" id="lightbox-img" src="" alt="lightbox image">
+
+    <!-- Thumbnails container -->
+    <div id="thumbnail-container">
+        <!-- Thumbnails will be added dynamically using JavaScript -->
+    </div>
+
+    <!-- Previous and Next buttons -->
+    <button id="prev-btn" onclick="changeImage(-1)">←</button>
+    <button id="next-btn" onclick="changeImage(1)">→</button>
+</div>
+
+
+ <!-- widget area starting from here -->
+ <div class="footer-widgets-area page-section col-4"> <!-- widget area starting from here -->
+    <div class="wrapper">
+                        <div class="hentry">
+              <aside id="custom_html-3" class="widget_text widget widget_custom_html"><h2 class="widget-title">About School</h2><div class="textwidget custom-html-widget">Established in 2071, Nidi Secondary School promotes entrepreneurial spirit through progressive education. Our vision is to transform the society through entrepreneurship.</div></aside>                  </div>
+                              <div class="hentry">
+              <aside id="custom_html-4" class="widget_text widget widget_custom_html"><h2 class="widget-title">General Inquiries</h2><div class="textwidget custom-html-widget"><b>Mail : </b>nidihsschool@gmail.com<br><b>Call :</b>
++97723544412-546044
+</div></aside>                  </div>
+                              <div class="hentry">
+              <aside id="custom_html-5" class="widget_text widget widget_custom_html"><h2 class="widget-title">Address</h2><div class="textwidget custom-html-widget">Nidi Secondary School<br>Indreni Campus<br>
+Birtamode-2 Ram Chowk Jhapa</div></aside>                  </div>
+                              <div class="hentry">
+              <aside id="nav_menu-5" class="widget widget_nav_menu"><h2 class="widget-title">Menu</h2><div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-16 current_page_item menu-item-122"><a href="https://nidi.edu.np/" aria-current="page">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-550"><a href="https://nidi.edu.np/notice-2/">Notice</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113"><a href="https://nidi.edu.np/program/">Program</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-117"><a href="https://nidi.edu.np/admission-info/">Admission</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118"><a href="https://nidi.edu.np/gallary/">Gallery</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-116"><a href="https://nidi.edu.np/about-us/">About us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-115"><a href="https://nidi.edu.np/contact-us/">Contact us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-469"><a href="https://nidi.edu.np/developer/">Developer</a></li>
+</ul></div></aside>                  </div>
+                        </div>
+    
+</div>
+
+
+    <script src="gallery.js"></script>
+</body>
+</html>
