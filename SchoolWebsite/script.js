@@ -1,19 +1,19 @@
-function showdropdown(){
-    if (document.getElementById("nav2").style.display === 'none') {
-        document.getElementById("nav2").style.display = 'grid';
-             
-            document.getElementById("dropdown").innerHTML='✕';
-            document.getElementById("navul").style.display='grid'; 
-           
-        // document.getElementById("smenubtn").style.  border='2px solid #fff';
-        } else {
-            document.getElementById("nav2").style.display = 'none';
-           
-            document.getElementById("dropdown").innerHTML='≡';
-            document.getElementById("navul").style.display='none'; 
-         
-        }
+function showdropdown() {
+    const nav2 = document.getElementById("nav2");
+    const dropdown = document.getElementById("dropdown");
+    const navul = document.getElementById("navul");
+    
+    if (!nav2 || !dropdown || !navul) {
+        console.error("One or more elements not found");
+        return;
     }
+    
+    const isHidden = getComputedStyle(nav2).display === 'none';
+    
+    nav2.style.display = isHidden ? 'grid' : 'none';
+    dropdown.textContent = isHidden ? '✕' : '≡';
+    navul.style.display = isHidden ? 'grid' : 'none';
+}
 var typed = new Typed(".typing", {
     strings: ["Hello!", "Hello!", "Hello!", "Hello!", "Namaste!", "Hola!", "Ciao!", "Bonjour!", "Blyaattt!!", "Konnichiwa!",],
     typeSpeed: 100,
