@@ -159,13 +159,15 @@ nav ul li a:hover::before {
         width: 95%;
         padding: 1.2rem;
         font-size: 0.9rem;
+        
     }
 }
 
        
     </style>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="stylesMob.css">
+    <link rel="stylesheet" href="facstl.css">
+
 </head>
 <body>
     <header>
@@ -187,7 +189,7 @@ nav ul li a:hover::before {
                 <ul id="navul">
                   <li><a href="index.html" >Home</a></li>
                   <li><a href="facilities.html"class="active">Admission</a></li>
-                  <li><a href="#">Contacts</a></li>
+                  <li><a href="contact.html">Contacts</a></li>
                   <li><a href="gallery.html">Gallery</a></li>
                   <li><a href="#">About us</a></li>
                 </ul>
@@ -261,4 +263,20 @@ nav ul li a:hover::before {
 </footer>
 
 </body>
+<script>  function showdropdown() {
+  const nav2 = document.getElementById("nav2");
+  const dropdown = document.getElementById("dropdown");
+  const navul = document.getElementById("navul");
+  
+  if (!nav2 || !dropdown || !navul) {
+      console.error("One or more elements not found");
+      return;
+  }
+  
+  const isHidden = getComputedStyle(nav2).display === 'none';
+  
+  nav2.style.display = isHidden ? 'grid' : 'none';
+  dropdown.textContent = isHidden ? '✕' : '≡';
+  navul.style.display = isHidden ? 'grid' : 'none';
+}</script>
 </html>
