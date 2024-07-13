@@ -20,9 +20,9 @@ function checkScroll() {
     const position = counterSection.getBoundingClientRect();
 
     if (position.top < window.innerHeight && position.bottom >= 0) {
-        animateCounter(document.getElementById('teacherCount'), 25, 1000);
-        animateCounter(document.getElementById('studentCount'), 500, 1500);
-        animateCounter(document.getElementById('staffCount'), 30, 1200);
+        animateCounter(document.getElementById('teacherCount'), 30, 1000);
+        animateCounter(document.getElementById('studentCount'), 600, 1500);
+        animateCounter(document.getElementById('staffCount'), 10, 1200);
         animateCounter(document.getElementById('experiencecount'), 33, 1300);
         window.removeEventListener('scroll', checkScroll);
     }

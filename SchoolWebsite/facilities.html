@@ -137,10 +137,35 @@ nav ul li a:hover::before {
   -moz-transform: scaleX(1);
   -ms-transform: scaleX(1);
   -o-transform: scaleX(1);
+}.admission-info {
+    text-align: justify;
+    background-color: #ffffff;
+   max-width: 800px;width: 40vw;
+    padding: 1.7rem;
+    border-radius: 1rem;
+    color: rgb(96, 95, 95);
+    font-family: Arial, Helvetica, sans-serif;text-align:justify;background-color: #ffffff;width: 800px;padding: 1.7rem;border-radius: 1rem;color: rgb(96, 95, 95);font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+    .admission-info {
+        width: 90%;
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .admission-info {
+        width: 95%;
+        padding: 1.2rem;
+        font-size: 0.9rem;
+    }
 }
 
        
     </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesMob.css">
 </head>
 <body>
     <header>
@@ -160,8 +185,8 @@ nav ul li a:hover::before {
               <div class="dropdown" id="dropdown" onclick="showdropdown()">≡</div>
               <div class="nav2" id="nav2">
                 <ul id="navul">
-                  <li><a href="index.html" class="active">Home</a></li>
-                  <li><a href="#">Facilities</a></li>
+                  <li><a href="index.html" >Home</a></li>
+                  <li><a href="facilities.html"class="active">Admission</a></li>
                   <li><a href="#">Contacts</a></li>
                   <li><a href="gallery.html">Gallery</a></li>
                   <li><a href="#">About us</a></li>
@@ -170,9 +195,9 @@ nav ul li a:hover::before {
               </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#hero" class="active">Home</a></li>
-                    <li><a href="facilities.html">Admission</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="facilities.html"class="active">Admission</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="#">About us</a></li>
                 </ul>
@@ -181,9 +206,9 @@ nav ul li a:hover::before {
     <div class="container">
          <h1>Fill Out The Admission Form:</h1>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdazJPoim3Xj4_-T1Nkk2V7Z_3QiIiOnYEkawE-yL_51F8MSA/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        <h3 style="text-align: center;font-size: 1.7rem;margin-bottom: 0rem;">Admission Info <br>
+        <h3 style="margin-top: 4rem;text-align: center;font-size: 1.7rem;margin-bottom: 0rem;color: #fff;">Admission Info <br>
           <span style="font-size: 1rem;">Eligibility Conditions for Admission </span></h3>
-        <p style="text-align:justify;background-color: #ffffff;width: 800px;padding: 1.7rem;border-radius: 1rem;color: rgb(96, 95, 95);font-family: Arial, Helvetica, sans-serif;">
+        <p class="admission-info">
             Must have successfully completed the PC or 10+2 in business/commerce or an equivalent course from a Higher Secondary School Board, or from Tribhuvan University, or from any other University/Board recognized by T.U.: or must have studied mathematics or economics as a full paper at the PC level or 10+2 programme.<br>
             <br>Must satisfy any entry requirements or criteria including the entrance test as prescribed by the Faculty Board or the campus.<br>
             <br> Admission Test
@@ -199,5 +224,41 @@ nav ul li a:hover::before {
             Final selection for admission will be based on the applicant’s previous academic records and marks obtained in the admission test. Candidates selected for admission will have to produce original certificates/testimonial for all examinations passed at the time of admission.
             </p>
     </div>
+    
+
+<footer class="footer">
+  <div class="footer-container">
+      <div class="footer-section about">
+          <h3>About School</h3>
+          <p>Jyoti Boarding School located at Budhabare,Jhapa was established in 2043 B.S and is serving quality education for the best outcome of our beloved students.
+          </p>
+          <div class="footer-section menu">
+            <h3>Menu</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Program</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Developer</a></li>
+            </ul>
+          </div>
+      </div>
+  <div class="footer-section inquiries" >
+      <h3>General Inquiries</h3>
+      <p style="cursor: pointer;">Mail: jyotiboardingschool@gmail.com</p>
+      <a href="tel:" > Call: 023555043</a>
+      <div class="fb-page" data-href="https://www.facebook.com/jyotiboardingschool/photos_by" data-tabs="timeline" data-width="350" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/jyotiboardingschool/photos_by" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/jyotiboardingschool/photos_by">Jyoti Boarding School- Budhabare,Jhapa</a></blockquote></div>
+  </div>
+  <div class="footer-section address">
+      <h3>Address</h3>
+      <p>Jyoti English Boarding School</p>
+    
+      <p>Buddhashanti-2 Buddhajyoti Chowk Jhapa</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.7383745671004!2d88.04615809275114!3d26.720669015366244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e5b71c6639eb2f%3A0x23d7c538c25ad760!2sJyoti%20Secondary%20English%20Boarding%20School-%20Buddhashanti%20%2CJhapa!5e0!3m2!1sen!2snp!4v1720280600918!5m2!1sen!2snp" width="400" height="300" style="border:0;margin-top: 3rem;width: 104%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      </div>
+
+  </div>
+</footer>
+
 </body>
 </html>

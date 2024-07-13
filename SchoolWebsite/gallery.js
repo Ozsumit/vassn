@@ -9,12 +9,20 @@ let currentIndex = 0;
                 currentIndex = clickedIndex;
                 updateLightboxImage();
                 document.getElementById('lightbox').style.display = 'flex';
+                window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+                window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+                window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+                window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+            document.getElementById('footer').style.display = 'none';
+
             }
         }
 
         // Close the lightbox
         function closeLightbox() {
             document.getElementById('lightbox').style.display = 'none';
+            document.getElementById('footer').style.display = 'flex';
+           
         }
 
         // Change the lightbox image based on direction (1 for next, -1 for prev)
@@ -71,6 +79,9 @@ let currentIndex = 0;
                     changeImage(-1);
                 } else if (e.key === 'ArrowRight') {
                     changeImage(1);
+                }
+                else if(e.key ==='Escape'){
+                    closeLightbox()
                 }
             }
         });
