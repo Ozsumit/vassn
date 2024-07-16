@@ -67,6 +67,7 @@ header {
 }
 .dropdown {
   display: none;
+  color: #fff;
 }
 .nav2 {
   display: none;
@@ -669,11 +670,13 @@ iframe{
   .footer-section {
     margin-right: 0;
     margin-bottom: 30px;
+    padding-left: 0.5rem;
   }
 
   .footer iframe {
-    width: 70%;
+    width: 89%;
     margin-top: 5rem;
+    border-radius: 1rem;
   }
 }
 .contactisland{

@@ -75,6 +75,9 @@
     color: #252424;
     position: absolute;
     z-index: 105;
+    left: 0;
+    border-top-left-radius:0rem ;
+    border-bottom-left-radius: 0rem;
     
     
   }

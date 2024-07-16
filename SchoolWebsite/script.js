@@ -21,7 +21,7 @@ function showdropdown() {
         header.style.width = '100%';
         header.style.zIndex = '1000';
     } else {
-        header.style.position = 'static'; // or whatever the original position was
+        header.style.position = 'absolute'; // or whatever the original position was
     }
 }
 var typed = new Typed(".typing", {
