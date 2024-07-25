@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    <title>Document</title>
+</head>
+<style>
+    #lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 80%;
+}
+
+#lightbox-img, #lightbox-video {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#lightbox-video {
+    display: none;
+}
+</style>
+<body>
+    <div class="gallery" id="gallery" onclick="openLightbox(event)">
+        <video controlslist="nodownload" oncontextmenu="return false;" style="border-radius: 1rem;">
+            <source class="video" src="gallery/An89UBsYS1arACRl2WI9nSPEKPXUixC9usqriBhBp_jpBqLVdrpI7m6Pg_jys7gUdzRpidOm2nfpCdo-L9LcgTyX.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+        </video>   
+        <img loading="lazy" src="gallery/1.jpg" alt="Image 1">
+        <!-- ... other images ... -->
+    </div>
+    
+    <!-- Lightbox container -->
+    <div id="lightbox">
+        <span id="close-btn" onclick="closeLightbox()">&times;</span>
+        
+        <!-- Container for both image and video -->
+        <div id="lightbox-content">
+            <img loading="lazy" id="lightbox-img" src="" alt="lightbox image">
+            <video id="lightbox-video" controls>
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    
+        <div id="thumbnail-container">
+            <!-- Thumbnails will be added dynamically using JavaScript -->
+        </div>
+    
+        <button id="prev-btn" onclick="changeMedia(-1)">←</button>
+        <button id="next-btn" onclick="changeMedia(1)">→</button>
+    </div>
+</body>
+<script>let currentIndex = 0;
+    const mediaElements = document.querySelectorAll('.gallery img, .gallery video');
+    const totalMedia = mediaElements.length;
+    
+    function openLightbox(event) {
+        if (event.target.tagName === 'IMG' || event.target.tagName === 'VIDEO') {
+            const clickedIndex = Array.from(mediaElements).indexOf(event.target);
+            currentIndex = clickedIndex;
+            updateLightboxMedia();
+            document.getElementById('lightbox').style.display = 'flex';
+            document.getElementById('footer').style.display = 'none';
+        }
+    }
+    
+    function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+        document.getElementById('footer').style.display = 'flex';
+        const video = document.getElementById('lightbox-video');
+        video.pause();
+    }
+    
+    function changeMedia(direction) {
+        currentIndex += direction;
+        if (currentIndex >= totalMedia) {
+            currentIndex = 0;
+        } else if (currentIndex < 0) {
+            currentIndex = totalMedia - 1;
+        }
+        updateLightboxMedia();
+    }
+    
+    function updateLightboxMedia() {
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxVideo = document.getElementById('lightbox-video');
+        const thumbnailContainer = document.getElementById('thumbnail-container');
+        const currentMedia = mediaElements[currentIndex];
+    
+        // Hide both and then show the correct one
+        lightboxImg.style.display = 'none';
+        lightboxVideo.style.display = 'none';
+    
+        if (currentMedia.tagName === 'IMG') {
+            lightboxImg.src = currentMedia.src;
+            lightboxImg.style.display = 'block';
+        } else if (currentMedia.tagName === 'VIDEO') {
+            lightboxVideo.src = currentMedia.querySelector('source').src;
+            lightboxVideo.style.display = 'block';
+        }
+    
+        // Clear existing thumbnails
+        thumbnailContainer.innerHTML = '';
+    
+        // Add new thumbnails
+        mediaElements.forEach((media, index) => {
+            const thumbnail = document.createElement('img');
+            if (media.tagName === 'IMG') {
+                thumbnail.src = media.src;
+            } else if (media.tagName === 'VIDEO') {
+                // For videos, you might want to generate a thumbnail or use a default video icon
+                thumbnail.src = 'path/to/video-thumbnail-icon.png';
+            }
+            thumbnail.alt = `Thumbnail ${index + 1}`;
+            thumbnail.classList.add('thumbnail');
+            thumbnail.addEventListener('click', () => updateMainMedia(index));
+            thumbnailContainer.appendChild(thumbnail);
+        });
+    
+        // Highlight the current thumbnail
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        thumbnails[currentIndex].classList.add('active-thumbnail');
+    }
+    
+    function updateMainMedia(index) {
+        currentIndex = index;
+        updateLightboxMedia();
+    }
+    
+    // Add initial thumbnails
+    updateLightboxMedia();
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', function (e) {
+        if (document.getElementById('lightbox').style.display === 'flex') {
+            if (e.key === 'ArrowLeft') {
+                changeMedia(-1);
+            } else if (e.key === 'ArrowRight') {
+                changeMedia(1);
+            } else if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        }
+    });</script>
+</html>

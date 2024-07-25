@@ -2,7 +2,8 @@ function showdropdown() {
     const nav2 = document.getElementById("nav2");
     const dropdown = document.getElementById("dropdown");
     const navul = document.getElementById("navul");
-    const header = document.querySelector("header"); // Add this line to select the header
+    const header = document.querySelector("header");
+    const body = document.body; // Add this line to select the body
 
     if (!nav2 || !dropdown || !navul || !header) {
         console.error("One or more elements not found");
@@ -20,8 +21,10 @@ function showdropdown() {
         header.style.position = 'fixed';
         header.style.width = '100%';
         header.style.zIndex = '1000';
+        body.style.overflow = 'hidden'; // Disable scrolling
     } else {
         header.style.position = 'absolute'; // or whatever the original position was
+        body.style.overflow = ''; // Re-enable scrolling
     }
 }
 var typed = new Typed(".typing", {
@@ -34,3 +37,7 @@ var typed = new Typed(".typing", {
 
 
 
+
+function port(){
+    window.location="https://www.sumit.info.np";
+  }

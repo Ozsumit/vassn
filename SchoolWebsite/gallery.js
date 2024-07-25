@@ -84,20 +84,32 @@ let currentIndex = 0;
                     closeLightbox()
                 }
             }
-        });
-        function showdropdown() {
+        });function showdropdown() {
             const nav2 = document.getElementById("nav2");
             const dropdown = document.getElementById("dropdown");
             const navul = document.getElementById("navul");
-            
-            if (!nav2 || !dropdown || !navul) {
+            const header = document.querySelector("header");
+            const body = document.body; // Add this line to select the body
+        
+            if (!nav2 || !dropdown || !navul || !header) {
                 console.error("One or more elements not found");
                 return;
             }
-            
+        
             const isHidden = getComputedStyle(nav2).display === 'none';
-            
+        
             nav2.style.display = isHidden ? 'grid' : 'none';
             dropdown.textContent = isHidden ? '✕' : '≡';
             navul.style.display = isHidden ? 'grid' : 'none';
+        
+            // Change the position of the header when nav2 is visible
+            if (isHidden) {
+                header.style.position = 'fixed';
+                header.style.width = '100%';
+                header.style.zIndex = '1000';
+                body.style.overflow = 'hidden'; // Disable scrolling
+            } else {
+                header.style.position = 'absolute'; // or whatever the original position was
+                body.style.overflow = ''; // Re-enable scrolling
+            }
         }

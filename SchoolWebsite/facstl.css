@@ -24,6 +24,7 @@
    }
    #Facilities{
       z-index: -1;
+   
    }
    a.logoxdc{
       margin-top: 0;
@@ -279,14 +280,16 @@
   }
   }
     .socials{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center;
-  width: 100%;
-    font-size: 3rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+        .socials {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            width: 100%;
+            font-size: 3rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            gap: 2rem;
+        }
     
     }
   
