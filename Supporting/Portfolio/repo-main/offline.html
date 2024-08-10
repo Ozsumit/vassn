@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<!-- THIS CODE IS NOT WRITTEN BY ME!!
+ALL CREDITS GO TO THE CREATOR -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+
+
+html, body {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+}
+
+html {
+  box-sizing: border-box;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: #000;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  color: #fff;
+  font-size: 21rem;
+  letter-spacing: .2px;
+  margin: 0;
+  text-transform: capitalize;
+}
+.small{
+  font-size: 2rem;
+  font-stretch: expanded;
+  letter-spacing: 1rem;
+
+}
+.exsmall{
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-stretch: expanded;
+  letter-spacing: 1rem;
+  font-weight: bold;
+}.exxsmall{
+  margin-top: 4rem;
+  font-size: 1rem;
+  font-stretch: expanded;
+  letter-spacing: .5rem;
+  font-weight: bold;
+  opacity:.3;
+}
+.handle {
+  background: #ffe500;
+  width: 1.8rem;
+  height: 4.2rem;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  margin-top: 1px;
+  position: absolute;
+  display: flex;
+  line-height: .7;
+  justify-content: center;
+  align-items: center;
+  p{
+    word-wrap: break-word;
+  color: #0a0a0ad2;
+  font-size: 1.4rem;
+  font-family:'Roboto Mono', monospace;
+  cursor: pointer;
+  width: 1rem; letter-spacing: 0;
+  }
+}
+
+#cb-replay {
+  fill: #666;
+  width: 20px;
+  margin: 15px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  overflow: inherit;
+  cursor: pointer;
+
+  &:hover {
+    fill: #888;
+  }
+}
+@media only screen and (max-width: 850px) {
+  p {
+  color: #fff;
+  font-size: 13rem;
+  letter-spacing: .2px;
+  margin: 0;
+  text-transform: capitalize;
+  width: auto;
+}
+}
+</style>
+<body>
+    <div class="container">
+        <div class="copy-container center-xy">
+          <p>
+            404
+          </p>
+             
+            <p class="small">page not found</p>
+            <p class="exsmall">Developed by Vass</p>
+          <span class="handle" onclick="home()"><p>Home</p></span>
+          <p class="exxsmall">You looking for pages like im looking for bitches. Unfortunately we didn't found any</p>
+
+
+      
+        </div>
+      </div>
+      
+      
+   
+      
+</body>
+<script>
+  function home(){
+
+    location.href='index.html';
+  }
+</script>
+</html>
